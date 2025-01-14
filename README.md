@@ -2,11 +2,17 @@
 A high-performance web scraping and content parsing tool built with Streamlit and Ollama. This application leverages GPU acceleration and parallel processing to efficiently scrape websites and extract specific information using LLM-powered parsing.
 
 **Features:**
+
 🚀 GPU-accelerated processing with CUDA support
+
 💻 Parallel content processing for improved performance
+
 🌐 Headless browser-based web scraping
+
 🔍 LLM-powered content parsing using Ollama
+
 ⚡ Optimized for high-end hardware (RTX 4000 series, modern CPUs)
+
 📊 Real-time progress tracking and performance metrics
 
 **Requirements**
