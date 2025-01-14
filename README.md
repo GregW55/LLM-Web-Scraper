@@ -2,7 +2,9 @@
 
 A high-performance web scraping and content parsing tool built with Streamlit and Ollama. This application leverages GPU acceleration and parallel processing to efficiently scrape websites and extract specific information using LLM-powered parsing.
 
+
 **Features:**
+
 
 🚀 GPU-accelerated processing with CUDA support
 
@@ -16,7 +18,10 @@ A high-performance web scraping and content parsing tool built with Streamlit an
 
 📊 Real-time progress tracking and performance metrics
 
+
+
 **Requirements** (Recommended Hardware)
+
 
 NVIDIA GPU (RTX 3000 series or better if you want to use pytorch with gpu instead of cpu)
 
@@ -24,7 +29,9 @@ NVIDIA GPU (RTX 3000 series or better if you want to use pytorch with gpu instea
 
 Modern multi-core CPU(set the core limit to whatever your cpu can handle!)
 
+
 **Software**
+
 
 Python 3.8+
 
@@ -32,7 +39,9 @@ Chrome/Chromium browser
 
 CUDA toolkit (for GPU acceleration)
 
+
 **Installation**
+
 
 Clone the repository:
 
@@ -50,7 +59,9 @@ ollama pull llama3.1:8B
 
 Download ChromeDriver matching your Chrome version and place it in the project directory.
 
+
 **Usage**
+
 
 Start the application:
 
@@ -87,6 +98,7 @@ Memory-efficient content splitting using NumPy
 
 **Configuration**
 
+
 Key parameters can be adjusted in parse.py:
 
 pythonCopymodel = OllamaLLM(
@@ -104,7 +116,9 @@ batch_size: Increase for more memory, decrease if experiencing issues
 
 max_workers: Adjust based on CPU cores (default: 8)
 
+
 **Known Limitations**
+
 
 Requires significant GPU memory for large documents
 
@@ -112,7 +126,9 @@ Performance depends on available hardware
 
 Some websites may block automated scraping
 
+
 **Contributing**
+
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -120,7 +136,9 @@ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
 **Acknowledgments**
+
 
 Built with Streamlit
 
