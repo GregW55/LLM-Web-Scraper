@@ -1,11 +1,7 @@
-**AI Web Scraper**
-
+# AI Web Scraper
 A high-performance web scraping and content parsing tool built with Streamlit and Ollama. This application leverages GPU acceleration and parallel processing to efficiently scrape websites and extract specific information using LLM-powered parsing.
 
-
-**Features:**
-
-
+# Features:
 🚀 GPU-accelerated processing with CUDA support
 
 💻 Parallel content processing for improved performance
@@ -18,11 +14,7 @@ A high-performance web scraping and content parsing tool built with Streamlit an
 
 📊 Real-time progress tracking and performance metrics
 
-
-
-**Requirements** (Recommended Hardware)
-
-
+# Requirements (Recommended Hardware)
 NVIDIA GPU (RTX 3000 series or better if you want to use pytorch with gpu instead of cpu)
 
 16GB+ RAM
@@ -30,20 +22,15 @@ NVIDIA GPU (RTX 3000 series or better if you want to use pytorch with gpu instea
 Modern multi-core CPU(set the core limit to whatever your cpu can handle!)
 
 
-**Software**
-
-
+# Software
 Python 3.8+
 
 Chrome/Chromium browser
 
 CUDA toolkit (for GPU acceleration)
 
-
-**Installation**
-
-
-Clone the repository:
+# Installation
+**Clone the repository**:
 
 git clone https://github.com/GregW55/LLM-Web-Scraper.git
 
@@ -60,9 +47,7 @@ ollama pull llama3.1:8B
 Download ChromeDriver matching your Chrome version and place it in the project directory.
 
 
-**Usage**
-
-
+# Usage
 Start the application:
 
 type this command in your console: streamlit run main.py
@@ -73,7 +58,7 @@ Once the content is scraped, describe what information you want to extract
 
 Click "Parse Content" to process the data
 
-**Files Structure**
+# File Structure
 
 main.py: Streamlit interface and main application logic
 
@@ -81,7 +66,7 @@ scraper.py: Web scraping functionality using Selenium
 
 parse.py: Content parsing using Ollama and parallel processing
 
-**Performance Optimization**
+# Performance Optimization
 
 The application includes several optimizations:
 
@@ -96,9 +81,7 @@ Optimized batch processing
 Memory-efficient content splitting using NumPy
 
 
-**Configuration**
-
-
+# Configuration
 Key parameters can be adjusted in parse.py:
 
 pythonCopymodel = OllamaLLM(
@@ -117,9 +100,7 @@ batch_size: Increase for more memory, decrease if experiencing issues
 max_workers: Adjust based on CPU cores (default: 8)
 
 
-**Known Limitations**
-
-
+# Known Limitations
 Requires significant GPU memory for large documents
 
 Performance depends on available hardware
@@ -127,9 +108,7 @@ Performance depends on available hardware
 Some websites may block automated scraping
 
 
-**Contributing**
-
-
+# Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 License
@@ -137,9 +116,7 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-**Acknowledgments**
-
-
+# Acknowledgments
 Built with Streamlit
 
 Uses Ollama for LLM processing
